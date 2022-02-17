@@ -3,7 +3,8 @@ package main
 import (
 	"os/exec"
 
-	"github.com/prometheus/common/log"
+        log "github.com/sirupsen/logrus"
+
 )
 
 func execCommand(execpath, address string) (string, bool) {

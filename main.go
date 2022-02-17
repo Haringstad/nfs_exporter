@@ -118,10 +118,10 @@ func main() {
 		num           int
 	)
 
-	log.AddFlags(kingpin.CommandLine)
-	kingpin.Version(version.Print("nfs_exporter"))
-	kingpin.HelpFlag.Short('h')
-	kingpin.Parse()
+	#log.AddFlags(kingpin.CommandLine)
+	#kingpin.Version(version.Print("nfs_exporter"))
+	#kingpin.HelpFlag.Short('h')
+	#kingpin.Parse()
 
 	log.Infoln("Starting nfs_exporter", version.Info())
 	log.Infoln("Build context", version.BuildContext())
